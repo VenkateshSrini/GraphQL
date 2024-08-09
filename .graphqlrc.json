@@ -1,0 +1,22 @@
+{
+  "schema": "schema.graphql",
+  "documents": "**/*.graphql",
+  "output": ".",
+  "namespace": "GenTest",
+  "extensions": {
+    "strawberryShake": {
+      "name": "GenTest",
+      "url": ".\\OrderManagement.graphql",
+      "records": {
+        "inputs": true,
+        "entities": true
+      },
+      "transportProfiles": [
+        {
+          "default": "Http",
+          "subscription": "WebSocket"
+        }
+      ]
+    }
+  }
+}
